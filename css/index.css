@@ -1,0 +1,338 @@
+/*
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix{
+  overflow: auto;
+}
+
+div.promo-top{
+  background: black;
+  height: 40px;
+  color:white;
+  padding: 10px 0px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+}
+
+
+header{
+  width: 100%;
+}
+
+div.logo{
+  background: black;
+  background-image: url("../img/logoTipo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 300px;
+}
+
+nav{
+  background: black;
+}
+
+nav ul{
+  color: white;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+}
+
+nav ul a{
+  color: white;
+  text-decoration: none;
+}
+
+nav ul a li:visited
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li:hover{
+  background: white;
+  color: black!important;
+}
+
+section{
+  margin: 20px;
+  border: 1px solid black;
+}
+
+h1{
+  font-family: sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+p{
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: justify;
+}
+/********** Muestra *********/
+section.sec-muestra{
+  margin-top: 150px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 700px;
+  padding-bottom: 10px;
+  border: none;
+}
+
+h2{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+div.muestra{
+  display: flex;
+  width: 100%;
+  align-content: space-around;
+  flex-direction: column;
+}
+
+div.imagenAbout{
+  background-image: url("../img/aboutImg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  display: none;
+}
+
+div.despcrionMuestra{
+  float: left;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+div.imgPremios{
+  background-image: url("../img/css3.png");
+  background-position: left;
+  background-repeat: repeat-x;
+  background-size: contain;
+  width: 90%;
+  height: 100px;
+}
+
+div.textoMuestra{
+
+}
+/********** sec-tendencias *********/
+
+div.img-presentacion img{
+  width: 100%;
+}
+
+section.sec-tendencias{
+  height: auto;
+  width: 100%;
+  padding: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 1px 0px;
+  border:none;
+
+}
+
+div.content-tendencias{
+margin-top: 50px;
+}
+
+div.tendencia{
+  float:left;
+  margin: 30px 0px 0px 5%;
+  width: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 23px;
+  -webkit-box-shadow: 0px 0px 21px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 21px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 21px -2px rgba(0,0,0,0.75);
+}
+
+
+div.imgTendencia{
+  width: 50%;
+  background: url("../img/tendencia5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px 10px;
+}
+
+section.tienda{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border:none;
+}
+section.tienda img{
+  width: 40%;
+  float:left;
+  margin-right: 10px;
+}
+
+div.btnComprar{
+  background: aqua;
+  border-radius: 30px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 17%;
+  padding:10px 0;
+}
+
+section.tienda p{
+}
+
+div.txtTendencias{
+  margin: 10px 10px 10px 0px;
+  width: 50%;
+}
+
+/*************** Footer **************/
+
+footer{
+  background: black;
+  margin-top: 150px;
+  padding: 10px 0px;
+}
+
+div.menu-footer{
+  max-width: 100%;
+}
+
+div.secFooter{
+  height: 100%;
+  color:white;
+  margin: 10px 10px;
+  padding: 1px 0px;
+  float:left;
+  width: 40%;
+}
+
+div.secFooter ul{
+  list-style: none;
+  text-align: left;
+  margin: 0px 0px;
+  padding: 5px 0px;
+
+
+}
+div.secFooter ul li{
+  font-family: sans-serif;
+  padding: 2px 0px 0px 0px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+h3{
+  font-family: sans-serif;
+  font-size: 17px!important;
+  font-weight: bold;
+  color: white;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+@media only screen and (min-width:720px) {
+  div.muestra{
+    flex-direction: row;
+  }
+  div.imagenAbout{
+    display: block;
+    width: 50%;
+    height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  div.despcrionMuestra{
+    margin-left: 10%;
+    width: 40%;
+    float: none;
+  }
+
+  section.sec-tendencias{
+    width:70%;
+  }
+  div.tendencia{
+    width: 40%;
+    margin: 30px 0px 0px 5%;
+  }
+}
+
+@media only screen and (min-width:721px){
+  div.tendencia{
+    display: block;
+    width: 80%;
+    float: left;
+  }
+  div.imgTendencia{
+  display: block;
+  width: 50%;
+  height: 400px;
+  margin:10px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  div.txtTendencias{
+    display: block;
+    margin: 0px auto 0px auto;
+    width: 80%
+  }
+}
+
+@media only screen and (min-width:1080px){
+  div.tendencia{
+    width: 40%;
+  }
+}
